@@ -1,0 +1,49 @@
+<!doctype>
+
+
+<html>
+<head>
+	<title>Sample Plugin</title>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	
+	<script src="simpleSlider.js"></script>
+	<script>
+		$(function() {
+			$(".slideshow").simpleSlideshow();
+			$('#slider-code').tinycarousel({duration: 250, display:2 });
+		});
+	</script>
+	
+	<style>
+		.slideshow{position:relative;}
+		.slideshow .ss_img{display:none; position:absolute; top:0; left:0;}
+		.ss_wrap .ss_thumb{float:left; margin:3px;}
+			
+		#slider-code { height: 50px overflow:hidden; }
+		#slider-code .viewport { float: left; width: 230px; height:50px; overflow: hidden; position: relative; }
+		#slider-code .buttons { display: block; margin: 30px 10px 0 0; float: left; }
+		#slider-code .next { margin: 30px 0 0 10px;  }
+		#slider-code .disable { visibility: hidden; }
+		#slider-code .overview { list-style: none; position: absolute; padding: 0; margin: 0; left: 0; top: 0; }
+		#slider-code .overview li{ float: left; margin: 0 5px 0 0; padding: 1px; height:50px; border: 1px solid #dcdcdc; width:50px;}
+		#slider-code .overview li.selected{border:2px solid red}
+	</style>
+</head>
+<body>
+	<div class="slideshow">
+		<img src="http://placehold.it/400x300" data-thumb="http://placehold.it/50x50" title="this is a caption" />
+		<img src="http://placehold.it/530x300" data-thumb="http://placehold.it/50x50" title="this is a caption" />
+		<img src="http://placehold.it/520x300" data-thumb="http://placehold.it/50x50" title="this is a caption" />
+		<img src="http://placehold.it/510x300" data-thumb="http://placehold.it/50x50" title="this is a caption" />
+		<img src="http://placehold.it/400x300" data-thumb="http://placehold.it/50x50" title="this is a caption" />
+		<img src="http://placehold.it/530x300" data-thumb="http://placehold.it/50x50" title="this is a caption" />
+		<img src="http://placehold.it/520x300" data-thumb="http://placehold.it/50x50" title="this is a caption" />
+		<img src="http://placehold.it/510x300" data-thumb="http://placehold.it/50x50" title="this is a caption" />
+		<img src="http://placehold.it/400x300" data-thumb="http://placehold.it/50x50" title="this is a caption" />
+		<img src="http://placehold.it/530x300" data-thumb="http://placehold.it/50x50" title="this is a caption" />
+		<img src="http://placehold.it/520x300" data-thumb="http://placehold.it/50x50" title="this is a caption" />
+		<img src="http://placehold.it/510x300" data-thumb="http://placehold.it/50x50" title="this is a caption" />
+
+	</div>
+</body>
+</html>
